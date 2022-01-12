@@ -9,12 +9,12 @@ Requirements:
 - This repository
 
 How to extract your public key:
-- SSH to your hotspot (if possible) and login to the remote_console with "sudo docker exec -it miner miner remote_console"
-- Execute "rp(libp2p_crypto:pubkey_to_bin(libp2p_crypto:b58_to_pubkey("<address>")))."
+- SSH to your hotspot and login to the remote_console with `sudo docker exec -it miner miner remote_console`
+- Execute `rp(libp2p_crypto:pubkey_to_bin(libp2p_crypto:b58_to_pubkey("ADDRESS_OF_YOUR_MINER"))).`
 
 How to use this repo:
 - git clone
-- modify src/test_app.erl and add your public key
+- modify src/test_app.erl and add your public key where it says PUT_YOUR_PUBLIC_KEY_HERE
 - chmod +x rebar3
 - ./rebar3 shell
 - application:start(test).
