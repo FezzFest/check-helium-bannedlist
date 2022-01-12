@@ -13,9 +13,8 @@ How to extract your public key:
 - Execute `rp(libp2p_crypto:pubkey_to_bin(libp2p_crypto:b58_to_pubkey("ADDRESS_OF_YOUR_MINER"))).`
 
 How to use this repo:
-- git clone
 - modify src/test_app.erl and add your public key where it says PUT_YOUR_PUBLIC_KEY_HERE
-- chmod +x rebar3
-- ./rebar3 shell
-- application:start(test).
+- `wget https://s3.amazonaws.com/rebar3/rebar3 && chmod +x rebar3`
+- `./rebar3 shell`
+- `application:start(test).`
 - ignore the crashes
